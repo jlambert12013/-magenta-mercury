@@ -1,0 +1,21 @@
+---
+import RootLayout from "../../layouts/RootLayout.astro";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import { formatDate } from "../../utils";
+
+const allPost: CollectionEntry<"posts">[] = await getCollection("posts");
+---
+
+<RootLayout title="POST EXAMPLE">
+    <h1>POST</h1>
+    {
+        allPost.map((post) => (
+            <>
+                <h1>{post.data.title}</h1>
+                <p>{post.data.author}</p>
+                <caption>{formatDate(post.data.pubDate)}</caption>
+            </>
+        ))
+    }
+</RootLayout>
