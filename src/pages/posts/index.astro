@@ -4,7 +4,10 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { formatDate } from "../../utils";
 
-const allPost: CollectionEntry<"posts">[] = await getCollection("posts");
+const allPost: CollectionEntry<"posts">[] = (await getCollection("posts")).sort(
+    (a: CollectionEntry<"posts">, b: CollectionEntry<"posts">) =>
+        a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
+);
 ---
 
 <RootLayout title="POST EXAMPLE">
