@@ -1,0 +1,16 @@
+---
+import RootLayout from "../../layouts/RootLayout.astro";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+const all: CollectionEntry<"cubcadets">[] = (
+    await getCollection("cubcadets")
+).sort(
+    (a: CollectionEntry<"posts">, b: CollectionEntry<"posts">) =>
+        a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
+);
+---
+
+<RootLayout title="Cub Cadets">
+    {all.map((post) => <div>CUB</div>)}
+</RootLayout>
