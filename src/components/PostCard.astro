@@ -1,7 +1,6 @@
 ---
-import { formatDate } from "../utils";
+import { parseDate } from "../utils";
 import type { CollectionEntry } from "astro:content";
-import { Image } from "astro:assets";
 
 const { post } = Astro.props;
 
@@ -12,7 +11,7 @@ interface Props {
 
 <div>
     <caption>
-        {formatDate(post.data.data)}
+        {parseDate(post.data.data)}
     </caption>
     <h1>
         {post.data.title}
