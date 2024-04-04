@@ -1,4 +1,3 @@
-
 function parseDate(date: Date): string {
     const options: Intl.DateTimeFormatOptions = {
         year: "numeric",
@@ -10,13 +9,16 @@ function parseDate(date: Date): string {
 }
 
 function parseLink(link: string): string {
-    let formatted = link.replace(/\s/g, '-')
+    const regex1 = /home/i
+    const regex2 = /[^a-zA-Z ]/g
 
-    formatted.toLocaleLowerCase
+    let formatted = link.replace(regex1, "")
+    formatted = formatted.replace(regex2, "")
+    formatted = formatted.replaceAll(" ", "")
+    formatted = formatted.toLowerCase()
+
+    console.log(formatted)
     return formatted
 }
 
-
-export {
-    parseDate, parseLink
-}
+export { parseDate, parseLink }
