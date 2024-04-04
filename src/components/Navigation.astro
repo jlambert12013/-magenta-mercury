@@ -1,0 +1,26 @@
+---
+import { parseLink } from "../utils";
+const { links } = Astro.props;
+
+interface Props {
+  links: Array<string>;
+}
+---
+
+<nav>
+  <ul>
+    {
+      links.map((link) => (
+        <li>
+          <a href={parseLink(link)}>{link}</a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  a::first-letter {
+    text-transform: capitalize;
+  }
+</style>

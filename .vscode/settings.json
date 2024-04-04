@@ -1,5 +1,8 @@
 {
     "typescript.format.enable": true,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "astro-build.astro-vscode"
+    "editor.defaultFormatter": "astro-build.astro-vscode",
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    }
 }

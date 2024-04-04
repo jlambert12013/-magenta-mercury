@@ -1,8 +1,8 @@
 ---
 import RootLayout from "../../layouts/RootLayout.astro";
+import PostCard from "../../components/PostCard.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
-import { formatDate } from "../../utils";
 
 const allPost: CollectionEntry<"posts">[] = (await getCollection("posts")).sort(
     (a: CollectionEntry<"posts">, b: CollectionEntry<"posts">) =>
@@ -11,14 +11,5 @@ const allPost: CollectionEntry<"posts">[] = (await getCollection("posts")).sort(
 ---
 
 <RootLayout title="POST EXAMPLE">
-    <h1>POST</h1>
-    {
-        allPost.map((post) => (
-            <>
-                <h1>{post.data.title}</h1>
-                <p>{post.data.author}</p>
-                <caption>{formatDate(post.data.pubDate)}</caption>
-            </>
-        ))
-    }
+    {allPost.map((post) => <PostCard post={post} />)}
 </RootLayout>

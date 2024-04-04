@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import logo from "../images/logo.svg";
+import Navigation from "./Navigation.astro";
+
+const links = [
+    "Home",
+    "Cub Cadet",
+    "Trail Master",
+    "Argo",
+    "Preowned",
+    "Need Financing?",
+];
+---
+
+<header>
+    <!-- <Image src={logo} alt="logo" /> -->
+    <Navigation links={links} />
+</header>

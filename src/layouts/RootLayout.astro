@@ -1,5 +1,5 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../constants";
 const { title } = Astro.props;
@@ -17,7 +17,7 @@ interface Props {
         <title>{SITE_TITLE} | {title}</title>
     </head>
     <body>
-        <Navbar />
+        <Header />
         <slot />
         <Footer />
     </body>

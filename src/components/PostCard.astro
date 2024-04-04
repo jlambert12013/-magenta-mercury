@@ -1,0 +1,30 @@
+---
+import { formatDate } from "../utils";
+import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
+
+const { post } = Astro.props;
+
+interface Props {
+    post: CollectionEntry<"posts">;
+}
+---
+
+<div>
+    <caption>
+        {formatDate(post.data.data)}
+    </caption>
+    <h1>
+        {post.data.title}
+    </h1>
+    <img src={"/images/" + post.data.image} alt={post.data.title + "-image"} />
+    <p>{post.data.author}</p>
+</div>
+
+<!-- 
+title: 'The best laptops for developers in 2024'
+pubDate: 2024-01-20
+author: 'John Doe'
+image: 'image1.png'
+tags: ['tech', 'hardware']
+slug: the-best-laptops-for-developers-in-2024 -->
