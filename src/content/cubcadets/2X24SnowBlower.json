@@ -1,0 +1,42 @@
+{
+  "title": "2X 24\" Snow Blower",
+  "price": "$1,099.00",
+  "features": [
+    {
+      "features": [
+        "243cc OHV Engine is powerful, dependable and equipped with push-button electric start.",
+        "24 inch clearing width and 21 inch intake height.",
+        "15” X-Trac™ tires provide strong traction in snowy conditions."
+      ]
+    }
+  ],
+  "specs": [
+    {
+      "specs": {
+        "EngineBrand": "Cub Cadet®",
+        "Forward/ReverseSpeeds": "6 forward / 2 reverse",
+        "AugerGearboxWarranty": "3-year limited",
+        "HandleGrip(s)": "Standard",
+        "ClearingWidth": "24\"",
+        "AugerDiameter": "12\"",
+        "Headlight(s)": "Dual LED",
+        "SpecificationsDisclaimer": "Specifications subject to change without notice and without incurring obligation. Products depicted on website and other advertisements are for demonstration purposes only. Actual products offered for sale may vary in design, required attachments, safety features and non-functional appearance from. See other general disclaimers at the bottom of our website."
+      }
+    }
+  ],
+  "modelNumber": "31AM5CVR710",
+  "imageURL": [
+    {
+      "imageURL": [
+        "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwd45c74e6/products/Equipment/Cub-Cadet-2X-24_1.jpg?sw=1000&sh=1000&sm=fit",
+        "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw1214f6af/products/Equipment/Cub-Cadet-2X-24_2.jpg?sw=1000&sh=1000&sm=fit",
+        "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw50966251/products/Equipment/Cub-Cadet-2X-24_3.jpg?sw=1000&sh=1000&sm=fit",
+        "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw21e4db2d/products/Equipment/Cub-Cadet-2X-24_env_01.jpg?sw=1000&sh=1000&sm=fit",
+        "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwc9276dec/products/Equipment/Cub-Cadet-2X-24_ins_01.jpg?sw=1000&sh=1000&sm=fit",
+        "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwc20bc98f/products/Equipment/Cub-Cadet_2X24_Parts.jpg?sw=1000&sh=1000&sm=fit"
+      ]
+    }
+  ],
+  "path": "/two-stage-snow-blowers/2x-24inch-snow-blower%C2%A0/31AM5CVR710.html",
+  "category": "two-stage-snow-blowers"
+}

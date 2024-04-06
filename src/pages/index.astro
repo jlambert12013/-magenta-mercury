@@ -3,5 +3,42 @@ import RootLayout from "../layouts/RootLayout.astro";
 ---
 
 <RootLayout title="Home">
-	<h1>Homepage</h1>
+  <ul class="flex flex-col xl:flex-row justify-center">
+    <li class="relative min-h-[180px] lg:min-h-[420px] w-full xl:max-w-6xl">
+      <video
+        class="w-full h-full"
+        aria-describedby="F8E60B45-45A4-4E07-AC54DD8032485467"
+        muted=""
+        loop=""
+        autoplay=""
+        controls=""
+        playsinline=""
+        style="object-fit: initial;"
+      >
+        <source
+          src="https://outdoorecommassets.sbdcdn.sbd-prod.com/ASSETS/OUTDOORECOMM/CUBCADET/home-2024/CUBCA24088TH ETU End Card Loop 16x9.mp4"
+          type="video/mp4"
+        />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </li>
+    <li
+      class="w-full xl:max-w-xl p-2 p-xl-4 bg-black text-white flex flex-col items-start"
+    >
+      <h2 class="text-xl md:text-3xl xl:text-5xl">
+        Experience the Ultimate This Spring
+      </h2>
+      <h3 class="text-lg md:text-xl"></h3>
+      <p class="text-sm sm:text-base leading-5">
+        Explore our line-up of gas and battery riders and zero-turns and step up
+        to the ultimate mowing experience.
+      </p>
+      <a
+        href="https://www.cubcadet.com/en_US/lawn-mowers"
+        class="border-2 border-[#ffc20f] px-4 py-1 mt-auto bg-[#ffc20f] text-black text-[#ffc20f] uppercase no-underline font-bold text-center w-full md:w-auto min-h-[48px] flex items-center justify-center"
+        >Shop Lawn Mowers
+        <span class="sr-only"> </span></a
+      >
+    </li>
+  </ul>
 </RootLayout>

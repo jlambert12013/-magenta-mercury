@@ -16,8 +16,6 @@ function parseLink(link: string): string {
     formatted = formatted.replace(regex2, "")
     formatted = formatted.replaceAll(" ", "")
     formatted = formatted.toLowerCase()
-
-    console.log(formatted)
     return formatted
 }
 
